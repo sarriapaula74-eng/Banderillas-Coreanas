@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Corn Dog — Tu antojo coreano favorito. Banderillas coreanas con queso, papa y Takis.">
+  <title>Corn Dog | Tu antojo coreano favorito</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-photo-wrap { position: relative; overflow: hidden; border-radius: 28px; min-height: 320px; }
+    .about-photo { display: block; width: 100%; height: 100%; min-height: 320px; max-height: 520px; object-fit: cover; border-radius: 28px; }
+    @media (max-width: 700px) { .about-photo-wrap, .about-photo { min-height: 280px; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Corn Dog inicio">
+        <img src="imagenes/logo-corn-dog.png" alt="Logo de Corn Dog" class="brand-logo">
+        <span>CORN <b>DOG</b></span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Pedidos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">K-FOOD • CRUJIENTE • IRRESISTIBLE</span>
+          <h1>Tu antojo<br><span>coreano</span> favorito.</h1>
+          <p class="hero-text">
+            Banderillas coreanas envueltas en una masa suave y fritas a la perfección.
+            Clásicas, con papa crujiente o con Takis para llevar la textura a otro nivel.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#productos">Ver productos <span>→</span></a>
+            <a class="btn btn-ghost" href="#contacto">Hacer un pedido</a>
+          </div>
+          <div class="mini-features">
+            <div><span>🧀</span><small>Queso derretido</small></div>
+            <div><span>🥔</span><small>Extra crujiente</small></div>
+            <div><span>🌶️</span><small>Toque de Takis</small></div>
+          </div>
+        </div>
+
+        <div class="hero-art hero-photo-wrap reveal">
+          <img src="imagenes/logo-corn-dog.png" alt="Corn dogs coreanos con queso derretido y salsas" class="hero-photo">
+          <div class="hero-sticker">CHEESY<br><b>CRUNCH</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Especialidades">
+      <div class="marquee-track">
+        <span>CHEESE PULL</span><b>✦</b><span>CRISPY K-FOOD</span><b>✦</b>
+        <span>CORN DOG</span><b>✦</b><span>CHEESE PULL</span><b>✦</b>
+        <span>CRISPY K-FOOD</span><b>✦</b><span>CORN DOG</span>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section about">
+      <div class="container about-grid">
+        <div class="about-card reveal">
+          <span class="section-tag">01 / NOSOTROS</span>
+          <h2>Una mordida,<br><em>mucho sabor.</em></h2>
+          <p>
+            Somos Corn Dog, un emprendimiento inspirado en la experiencia divertida
+            y llena de textura de las banderillas coreanas. Nuestra propuesta combina
+            una masa suavemente dulce con salchicha, queso y salsas para crear un antojo
+            que se disfruta desde el primer mordisco.
+          </p>
+          <p>
+            Lo que nos diferencia está en los detalles: queso de alta calidad que se
+            derrite por completo, coberturas crujientes y opciones para quienes buscan
+            un extra de textura y sabor.
+          </p>
+        </div>
+        <div class="about-visual reveal about-photo-wrap">
+          <img src="imagenes/muestra.jpg" alt="Tres banderillas coreanas con diferentes coberturas y salsas" class="about-photo">
+          <span class="floating-note">KOREAN<br>STREET FOOD</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="section products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-tag">02 / NUESTROS PRODUCTOS</span>
+            <h2>Elige tu <em>crunch.</em></h2>
+          </div>
+          <p>Una base, diferentes formas de hacerla irresistible.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card featured reveal">
+            <div class="product-number">01</div>
+            <div class="product-art classic-art">
+              <img src="imagenes/clasic.jpg" alt="Banderillas coreanas clásicas con queso" class="product-photo">
+            </div>
+            <div class="product-content">
+              <span class="product-label">CLÁSICA</span>
+              <h3>Cheese Classic</h3>
+              <p>Masa suave, salchicha y queso fundido para el clásico que nunca falla.</p>
+              <a href="#contacto" class="card-link">Pedir ahora <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-number">02</div>
+            <div class="product-art potato-art">
+              <img src="imagenes/papa.jpg" alt="Corn dog con cubos de papa crujiente" class="product-photo">
+            </div>
+            <div class="product-content">
+              <span class="product-label">CRUNCH EXTRA</span>
+              <h3>Potato Crunch</h3>
+              <p>Cubierta con cubos de papa crujiente para una mordida con más textura.</p>
+              <a href="#contacto" class="card-link">Pedir ahora <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-number">03</div>
+            <div class="product-art takis-art">
+              <img src="imagenes/takis.jpg" alt="Corn dogs cubiertos de Takis y salsa" class="product-photo">
+            </div>
+            <div class="product-content">
+              <span class="product-label">PICANTE</span>
+              <h3>Takis Fire</h3>
+              <p>Rebozado de Takis triturados con color intenso, limón y un toque de picor.</p>
+              <a href="#contacto" class="card-link">Pedir ahora <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cheese-pull">
+      <div class="container pull-grid">
+        <div class="pull-art reveal" style="overflow:hidden; border-radius:24px; background:#fff7e9;">
+          <img src="imagenes/clasica.jpg"
+               alt="Corn dogs coreanos con queso derretido y estirado"
+               style="display:block; width:100%; height:100%; min-height:280px; max-height:520px; object-fit:cover; border-radius:24px;">
+        </div>
+        <div class="pull-copy reveal">
+          <span class="section-tag">03 / EL DETALLE</span>
+          <h2>Ese momento<br>de <em>estirón.</em></h2>
+          <p>
+            Preparamos nuestras banderillas con queso de alta calidad para lograr
+            ese efecto visual divertido y delicioso que hace especial cada mordida.
+          </p>
+          <div class="quote">“Queso que se estira.<br>Sabor que se queda.”</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="container contact-box reveal">
+        <div class="contact-copy">
+          <span class="section-tag">04 / PEDIDOS</span>
+          <h2>¿Se te antojó?</h2>
+          <p>Escríbenos y convierte el antojo en tu próxima banderilla.</p>
+        </div>
+        <div class="contact-actions">      
+          <a class="contact-btn instagram" href="https://www.instagram.com/corns.dogs/" target="_blank" rel="noopener">
+            <span>◎</span>
+            <div><small>CONÓCENOS EN</small><strong>Instagram</strong></div>
+            <b>↗</b>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand"><img src="imagenes/logo-corn-dog.png" alt="Logo de Corn Dog" class="brand-logo"><span>CORN <b>DOG</b></span></div>
+      <p>Tu antojo coreano favorito.</p>
+      <span>© 2026 Corn Dog</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
